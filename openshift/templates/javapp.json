@@ -2,9 +2,9 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "java-example",
+    "name": "JavaApp",
     "annotations": {
-      "openshift.io/display-name": "Javaapp",
+      "openshift.io/display-name": "JavaApp",
       "description": "An example java application with no database. For more information",
       "tags": "quickstart,java",
       "iconClass": "icon-tomcat",
@@ -142,7 +142,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "javaapp-example"
+                "javaApp"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -168,7 +168,7 @@
           "spec": {
             "containers": [
               {
-                "name": "javaapp-example",
+                "name": "JavaApp",
                 "image": " ",
                 "ports": [
                   {
